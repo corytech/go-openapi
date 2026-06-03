@@ -3,7 +3,7 @@ package openapi
 type ErrorCode string
 
 var (
-	BadRequestErrCode        ErrorCode = "BAD_REQUEST"
+	InvalidDataErrCode       ErrorCode = "INVALID_DATA"
 	ValidationErrCode        ErrorCode = "VALIDATION"
 	UnknownErrCode           ErrorCode = "UNKNOWN"
 	MethodNotFoundErrCode    ErrorCode = "METHOD_NOT_FOUND"
