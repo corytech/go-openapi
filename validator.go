@@ -3,6 +3,9 @@ package openapi
 import (
 	"encoding/json"
 	"errors"
+	"reflect"
+	"strings"
+
 	openapivalidator "github.com/corytech/go-openapi/validator"
 	"github.com/corytech/go-tracing"
 	"github.com/gin-gonic/gin"
@@ -10,8 +13,6 @@ import (
 	ut "github.com/go-playground/universal-translator"
 	"github.com/go-playground/validator/v10"
 	entranslations "github.com/go-playground/validator/v10/translations/en"
-	"reflect"
-	"strings"
 )
 
 var (
@@ -56,7 +57,7 @@ func BindAndValidate(r any, c *gin.Context) bool {
 			return false
 		}
 
-		NewError(BadRequestErrCode).Send(c)
+		NewError(InvalidDataErrCode).Send(c)
 		return false
 	}
 
