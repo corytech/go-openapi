@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.3](https://github.com/corytech/go-openapi/compare/v1.0.2...v1.0.3) (2026-08-04)
+
+
+### 🧰 Maintenance
+
+* **CPD-8393:** Pin external actions with SHA ([eacdd47](https://github.com/corytech/go-openapi/commit/eacdd47325bfb98ca95059d9538bd441556f4319))
+* **CPD-8393:** Pin external actions with SHA - [#5](https://github.com/corytech/go-openapi/issues/5) ([7a199ae](https://github.com/corytech/go-openapi/commit/7a199aef011f8a63390ade707309c04f17b857d9))
+
 ## [1.0.2](https://github.com/corytech/go-openapi/compare/v1.0.1...v1.0.2) (2026-06-03)
 
 
